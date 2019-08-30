@@ -1,5 +1,9 @@
-import React from 'react';
-import './App.css';
+import React, {useState, useEffect} from 'react';
+import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styled from "styled-components";
+
+// import './App.css';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
