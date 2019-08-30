@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import ReactDOM from "react-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Characters from "./components/Characters";
 import styled from "styled-components";
 
 // import './App.css';
@@ -16,6 +17,8 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+
+      <Characters />
     </div>
   );
 }
