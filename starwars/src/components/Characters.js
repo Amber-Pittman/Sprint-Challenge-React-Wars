@@ -2,7 +2,9 @@ import React from 'react';
 
  function Characters(props) {
     return (
-        <div>Hello</div>
+        <div>
+            <h2> {props.name} </h2>
+        </div>
     );
 }
 
