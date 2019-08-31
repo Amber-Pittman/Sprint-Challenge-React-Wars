@@ -1,6 +1,7 @@
 import React from 'react';
 
  function Characters(props) {
+     console.log(`This is Characters ${props}`);
     return (
         <div>
             <h2> {props.name} </h2>
