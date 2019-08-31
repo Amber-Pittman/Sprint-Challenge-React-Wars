@@ -14,7 +14,7 @@ import CharacterName from "./CharacterName.js";
             {
                 charName.map((charName) => {
                 return (<CharacterName>
-                    <Name>{charName.name}</Name>
+                    <h1>{charName.name}</h1>
                 </CharacterName>
             )
         })
