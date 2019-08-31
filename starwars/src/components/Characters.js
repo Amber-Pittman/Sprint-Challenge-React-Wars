@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
+import CharacterName from "./CharacterName.js";
 
  function Characters(props) {
-     console.log(`This is Characters ${props}`);
+
+    const [charName, setCharName] = useState("name");
+    console.log("Characters", props);
+    
     return (
         <div>
-            <h2> {props.name} </h2>
+            {charName.map(name => {
+                return <CharacterName text={name} />;
+            })}
         </div>
     );
-}
+};
 
  export default Characters

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Characters from "./components/Characters.js";
+import CharacterName from "./components/CharacterName.js";
 import styled from "styled-components";
 
 // import './App.css';
@@ -31,7 +32,7 @@ function App() {
     <div className="App">
       <h1 className="Header">React Wars</h1>
 
-      <Characters name={data.name} />
+      <Characters name={data} />
     </div>
   );
 }
