@@ -3,16 +3,24 @@ import CharacterName from "./CharacterName.js";
 
  function Characters(props) {
 
-    const [charName, setCharName] = useState("name");
+    const [charName, setCharName] = useState([]);
     console.log("Characters", props);
+
+    // const char = props.data;
+    // console.log(`This is the ${props.data}`);
     
     return (
         <div>
-            {charName.map(name => {
-                return <CharacterName text={name} />;
-            })}
-        </div>
-    );
+            {
+                charName.map((charName) => {
+                return (<CharacterName>
+                    <Name>{charName.name}</Name>
+                </CharacterName>
+            )
+        })
+    }
+    </div>
+);
 };
 
- export default Characters
+ export default Characters;

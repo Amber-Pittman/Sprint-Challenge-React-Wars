@@ -1,12 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import ReactDOM from "react-dom";
 import axios from "axios";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Characters from "./components/Characters.js";
-import CharacterName from "./components/CharacterName.js";
-import styled from "styled-components";
-
-// import './App.css';
+import './App.css';
 
 function App() {
   // Try to think through what state you'll need for this app before starting. Then build out
