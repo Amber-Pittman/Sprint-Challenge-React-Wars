@@ -4,7 +4,7 @@ import CharacterName from "./CharacterName.js";
  function Characters(props) {
 
     const [charName, setCharName] = useState([]);
-    console.log("Characters", props);
+    console.log("Characters", props.name.results);
 
     // const char = props.data;
     // console.log(`This is the ${props.data}`);
@@ -12,11 +12,12 @@ import CharacterName from "./CharacterName.js";
     return (
         <div>
             {
-                charName.map((charName) => {
-                return (<CharacterName>
-                    <h1>{charName.name}</h1>
+                props.name.map((charName) => {
+                return (<CharacterName name={charName.name}>
+                    <h1>charName</h1>
                 </CharacterName>
             )
+            console.log(charName.name);
         })
     }
     </div>
