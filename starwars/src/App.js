@@ -16,7 +16,8 @@ function App() {
 
   const StyledH1 = styled.h1`
   font-size: 6em;
-  margin: 0 2.5em;
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: center;
 `;
