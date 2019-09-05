@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import Characters from "./components/Characters.js";
-import styled from "../node_modules/styled-components";
-import './App.css';
+import styled from 'styled-components';
+//import './App.css';
 
 function App() {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -14,8 +14,11 @@ function App() {
 
   const [data, setData] = useState([]);
 
-  const h1 = styled.h1`
-  font-size: 52px;
+  const StyledH1 = styled.h1`
+  font-size: 6em;
+  margin: 0 2.5em;
+  display: flex;
+  justify-content: center;
 `;
 
   useEffect(() => {
@@ -30,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <StyledH1 className="Header">React Wars</StyledH1>
 
       <Characters name={data} />
     </div>
