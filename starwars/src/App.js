@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import Characters from "./components/Characters.js";
+import styled from "../node_modules/styled-components";
 import './App.css';
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
   // sync up with, if any.
 
   const [data, setData] = useState([]);
+
+  const h1 = styled.h1`
+  font-size: 52px;
+`;
 
   useEffect(() => {
     console.log("first render");
