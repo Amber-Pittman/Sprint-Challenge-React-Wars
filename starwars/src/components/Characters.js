@@ -3,7 +3,7 @@ import CharacterName from "./CharacterName.js";
 
  function Characters(props) {
 
-    const [charName, setCharName] = useState([]);
+    const [char, setCharName] = useState([]);
     console.log("Characters", props.name.results);
 
     // const char = props.data;
@@ -12,12 +12,11 @@ import CharacterName from "./CharacterName.js";
     return (
         <div>
             {
-                props.name.map((charName) => {
-                return (<CharacterName name={charName.name}>
-                    <h1>charName</h1>
+                props.name.map((char) => {
+                return (<CharacterName name={char.name} gender={char.gender}>
                 </CharacterName>
             )
-            console.log(charName.name);
+            
         })
     }
     </div>
